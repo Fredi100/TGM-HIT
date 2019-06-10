@@ -1,0 +1,105 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+kill(all);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1a:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg1a1: x^2+p*x+q = 0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Gleichung nach x Auflösen
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1a1: solve(glg1a1, x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Listen mit index in Eckiger Klammer gibt das gespeicherte Element an der angegebenen Stelle zurück
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1a1[1];
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+glg1a2: a*x^2+b*x+c = 0;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1a2: solve(glg1a2, x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1b:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1b: ratsimp(rhs(erg1a1[1])+rhs(erg1a1[2]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1c:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1c: ratsimp(rhs(erg1a1[1])*rhs(erg1a1[2]));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1d:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+factor();
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2a:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg2a: 1/(2+x)+1/(4+x) = 1/(1+x)+1/(10+x);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg2a: solve(glg2a);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d([[discrete,[y=0,x=rhs(erg2a[1])]],[lhs(glg2a)-rhs(glg2a)],[y=0,x=rhs(erg2a[2])]],[x,-20,10],[y,-50,50]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2b:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2c:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2d:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 3a:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 3b:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 3c:
+   [wxMaxima: comment end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

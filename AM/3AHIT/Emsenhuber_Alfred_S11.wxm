@@ -1,0 +1,125 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+kill(all);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1a:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg1: -4*(1-x/3)+2/3*(3-x/5)-x/3=5/54+2/27*(-1/4+x/2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1a: solve(glg1);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 1b:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1b: subst(erg1a,lhs(glg1));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg1c: subst(erg1a,rhs(glg1));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2a:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg2: 3*y-5*y*(y-3)=-17*y+2-y*(2-3*y);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg2a: solve(glg2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+ratsimp(subst(erg2a, glg2));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2b:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+erg2b: float(erg2a);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+subst(erg2b,glg2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 2c:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+fpprec:3$ erg2b;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 3:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg3a: 15*x-3=12*x-5*y;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+glg3b: 3*x-6*y=x-y+19;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg3: solve([glg3a,glg3b]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 4:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg4a: x-2*y+3*z=10;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+glg4b: 7*x-5*y+6*z=25;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+glg4c: 3*x-3*y+4*z=15;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg4: solve([glg4a,glg4b,glg4c]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: comment start ]
+Beispiel 5:
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+glg5a: -3*x-4=y;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+glg5b: x=4*(y-2)/3;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+erg5: solve([glg5a,glg5b]);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+wxplot2d([lhs(glg5a),rhs(solve(glg5b,glg5a))],[x,-100,100],[y,-100,100]);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
