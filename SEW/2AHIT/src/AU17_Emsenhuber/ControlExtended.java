@@ -16,7 +16,7 @@ public class ControlExtended extends Control implements ActionListener{
 	 * Erzeugt ein ModelExtended und ein ViewExtended Objekt und bearbeitet dann das ViewExtended
 	 */
 	public ControlExtended(){
-		super("Test");	//Muss leider sein da sonst ein Control Objekt miterzeugt wird welches dann ein ungewolltest Fenster erstellt.
+		super("Matchsticks");	//Muss leider sein da sonst ein Control Objekt miterzeugt wird welches dann ein ungewolltest Fenster erstellt.
 		m = new ModelExtended();
 		v = new ViewExtended(this);
 		
