@@ -13,7 +13,7 @@ public class Text {
         for (int i=0;i<text.length();i++) { 
             System.out.print("\f");
             newText+=text.charAt(i);
-            b.setText(newText);
+            //b.setText(newText);
             try {
                 if (text.charAt(i)=='.' || text.charAt(i)=='!' || text.charAt(i)=='?') {
                     Thread.sleep(1500);

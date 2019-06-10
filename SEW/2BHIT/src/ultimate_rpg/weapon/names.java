@@ -3,11 +3,11 @@ package ultimate_rpg.weapon;
 
 import java.util.Random;
 
-public class names {
-	static String[] adjektiv = {"Erhaben",	"Geschliffen","Magisch",	 "Verst�rkt",  "D�monisch", "G�ttlich","Antik", "Selten",	 "Einzigartig",	 "Krass Krank",
-						 		"M�chtig",	"K�niglich",  "Meisterhaft", "Schick",	   "Verbessert","Geh�rtet","Scharf","Schmerzhaft","Unterdr�ckend","Verw�stend",
-						 		"Adelig", 	"Sagenhaft",  "Erlesen",	 "Echt",	   "Voll",	    "Mythisch","Episch","Gef�chtet",	 "Unschlagbar",	 "Geschmiedet",
-						 		"Gro�artig","Gut",		  "Schockierend","Schrecklich"};
+public class Names {
+	static String[] adjektiv = {"Erhaben",	"Geschliffen","Magisch",	 "Verstärkt",  "Dämonisch", "Göttlich","Antik", "Selten",	 "Einzigartig",	 "Krass Krank",
+						 		"Mächtig",	"Königlich",  "Meisterhaft", "Schick",	   "Verbessert","Gehärtet","Scharf","Schmerzhaft","Unterdrückend","Verwüstend",
+						 		"Adelig", 	"Sagenhaft",  "Erlesen",	 "Echt",	   "Voll",	    "Mythisch","Episch","Gefürchtet",	 "Unschlagbar",	 "Geschmiedet",
+						 		"Großartig","Gut",		  "Schockierend","Schrecklich"};
 	public static String generateName(int typ){
 		String name = "";
 		if(typ == 0){

@@ -1,6 +1,6 @@
 package ultimate_rpg.weapon.dagger;
 
-import weapon.weapon;
+import ultimate_rpg.weapon.weapon;
 
 
 public class dagger extends weapon{

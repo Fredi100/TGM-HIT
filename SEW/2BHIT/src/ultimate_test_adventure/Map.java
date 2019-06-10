@@ -12,7 +12,7 @@ public class Map {
     @SuppressWarnings("unused")
 	private char player='i';
     @SuppressWarnings("unused")
-	private char bush='�';
+	private char bush='B';
     @SuppressWarnings("unused")
 	private char hWall='-';
     @SuppressWarnings("unused")
@@ -24,8 +24,7 @@ public class Map {
     @SuppressWarnings("unused")
 	private char tree='T';
     public static String getMap(){
-        String karte;
-        karte = "\f"+
+        return  "\f"+
                 "# # # # # # # # # # # # # # # # # #"+"\n"+
                 "#                     | |         #"+"\n"+
                 "#   @       T         | |         #"+"\n"+
@@ -37,13 +36,12 @@ public class Map {
                 "#   @ - H - @       T       T     #"+"\n"+
                 "#                                 #"+"\n"+
                 "#   @                             #"+"\n"+
-                "#           �             �       #"+"\n"+
-                "#         � � �     @             #"+"\n"+
-                "#           @ �                   #"+"\n"+
+                "#           B             B       #"+"\n"+
+                "#         B B B     @             #"+"\n"+
+                "#           @ B                   #"+"\n"+
                 "#     @ i                 @       #"+"\n"+
-                "# �       @   T       T           #"+"\n"+
-                "# @ �                             #"+"\n"+
+                "# B       @   T       T           #"+"\n"+
+                "# @ B                             #"+"\n"+
                 "# # # # # # # # # # # # # # # # # #";
-        return karte;
     }
 }

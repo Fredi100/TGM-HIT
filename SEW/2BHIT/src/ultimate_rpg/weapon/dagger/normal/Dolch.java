@@ -1,6 +1,6 @@
 package ultimate_rpg.weapon.dagger.normal;
 
-import weapon.dagger.dagger;
+import ultimate_rpg.weapon.dagger.dagger;
 
 
 
@@ -12,6 +12,6 @@ public class Dolch extends dagger{
 		minAtk = berechneAtk(minAtk);
 		maxAtk = berechneAtk(maxAtk);
 		dps = berechneDps();
-		name = Names(1) + "er Dolch";
+		name = "er Dolch";
 	}
 }

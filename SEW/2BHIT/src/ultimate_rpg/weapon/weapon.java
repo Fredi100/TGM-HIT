@@ -11,7 +11,9 @@ public class weapon {
 	protected double maxDef = 0;						//Der maximale Verteidigungswert des Schildes
 	protected double Def = minDef+((maxDef-minDef)/2);	//Die tatsächliche Verteidung
 	protected String waffenart = "";					//Die Waffenart
-	
+
+	protected double level = 1;
+
 	public weapon(){
 		
 	}
